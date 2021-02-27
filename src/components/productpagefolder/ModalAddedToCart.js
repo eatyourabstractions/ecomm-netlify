@@ -6,7 +6,7 @@ import COLORS from "../../constants";
 
 const ModalAddedToCart = ({ showModal, setShowModal }) => {
   const FlexWrapper = styled.div`
-    display: flex
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;

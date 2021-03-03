@@ -37,11 +37,11 @@ const Header = () => {
           </Link>
           <Link to="/cart">
             <CartWrapper
-              onClick={() =>
-                setTimeout(() => {
-                  window.location.reload();
-                }, 500)
-              }
+              // onClick={() =>
+              //   setTimeout(() => {
+              //     window.location.reload();
+              //   }, 500)
+              // }
             >
               <ItemsInCart>{cart.numberOfItems}</ItemsInCart>
               <div>Cart</div>

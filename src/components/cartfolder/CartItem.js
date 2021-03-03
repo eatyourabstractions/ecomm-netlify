@@ -9,9 +9,10 @@ const CartItem = ({ itemObj }) => {
       method: "PATCH",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify({ id: id, quantity: quantity }),
-    }).then(() => {
-      window.location.reload();
-    });
+    })
+    // .then(() => {
+    //   window.location.reload();
+    // });
   };
   const handleRemove = (id) => {
     fetch("/cart", {

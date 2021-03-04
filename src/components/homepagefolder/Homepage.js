@@ -16,7 +16,7 @@ const Homepage = () => {
   const itemsData = useSelector(
     (state) => state.items.items && state.items.items.data
   );
-//&& cp _redirects build/_redirects
+
   useEffect(() =>{
    fetch('/api/netFuncTest')
       .then((response) => {

@@ -16,11 +16,14 @@ const Homepage = () => {
   const itemsData = useSelector(
     (state) => state.items.items && state.items.items.data
   );
-
+//&& cp _redirects build/_redirects
   useEffect(() =>{
    fetch('/api/netFuncTest')
       .then((response) => {
           console.log('netfunc test:', response);
+        })
+        .catch(err =>{
+          console.log('err', err)
         })
   },[])
 

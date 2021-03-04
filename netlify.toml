@@ -1,6 +1,14 @@
 [build]
+    publish = "/build"
+    command = "CI=false yarn build"
     functions = "functions"
 [[redirects]]
     from = "/api/*"
     to = "./netlify/functions/:splat"
+    status = 200
+    from = "https://keen-dijkstra-382f3a.netlify.app/*"
+    to = " https://fierce-anchorage-33605.herokuapp.com/:splat"
+    status = 200
+    from = "/*" 
+    to = "/" 
     status = 200

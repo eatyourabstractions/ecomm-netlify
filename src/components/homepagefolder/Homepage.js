@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import styled from "styled-components";
 import { useSelector, useDispatch } from "react-redux";
 //rfce && rxr
@@ -16,6 +16,13 @@ const Homepage = () => {
   const itemsData = useSelector(
     (state) => state.items.items && state.items.items.data
   );
+
+  useEffect(() =>{
+   fetch('/api/netFuncTest')
+      .then((response) => {
+          console.log('netfunc test:', response);
+        })
+  },[])
 
 
   const dispatch = useDispatch();

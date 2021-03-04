@@ -1,7 +1,7 @@
 const axios = require('axios')
 
 exports.handler = async (event, context) => {
-   const url = 'http://localhost:4000/netfunction-test' 
+   const url = 'https://fierce-anchorage-33605.herokuapp.com/netfunction-test' 
 
    const res = await axios.get(url)
 

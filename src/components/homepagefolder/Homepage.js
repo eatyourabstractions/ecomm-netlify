@@ -18,7 +18,7 @@ const Homepage = () => {
   );
 
   useEffect(() =>{
-   fetch('/api/netFuncTest')
+   fetch('https://keen-dijkstra-382f3a.netlify.app/.netlify/functions/netFuncTest')
       .then((response) => {
           console.log('netfunc test:', response);
         })

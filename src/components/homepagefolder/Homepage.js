@@ -20,7 +20,7 @@ const Homepage = () => {
   useEffect(() =>{
    fetch('/.netlify/functions/netFuncTest')
       .then((response) => {
-          console.log('netfunc test:', response);
+          console.log('netfunc test:', response.body);
         })
         .catch(err =>{
           console.log('err', err)

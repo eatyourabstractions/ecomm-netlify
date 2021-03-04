@@ -6,9 +6,15 @@
     from = "/api/*"
     to = "./netlify/functions/:splat"
     status = 200
+
+
+[[redirects]]
     from = "https://keen-dijkstra-382f3a.netlify.app/*"
     to = " https://fierce-anchorage-33605.herokuapp.com/:splat"
     status = 200
+
+
+[[redirects]]
     from = "/*" 
     to = "/" 
     status = 200

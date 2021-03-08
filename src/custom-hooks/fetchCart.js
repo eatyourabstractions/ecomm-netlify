@@ -6,7 +6,7 @@ const useFetchCart = () => {
   const dispatch = useDispatch();
   React.useEffect(() => {
     dispatch(requestCart());
-    fetch("/cart")
+    fetch("/.netlify/functions/getCart")
       .then((res) => {
         return res.json();
       })

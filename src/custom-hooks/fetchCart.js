@@ -8,7 +8,7 @@ const useFetchCart = () => {
     dispatch(requestCart());
     fetch("/.netlify/functions/getCart")
       .then((res) => {
-        console.log('fetchCart', res.text())
+        console.log('fetchCart', res)
         return res.json();
       })
       .then((json) => {

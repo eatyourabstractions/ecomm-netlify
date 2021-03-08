@@ -8,7 +8,7 @@ exports.handler = async (event, context) => {
 
    return {
       statusCode: res.status,
-      body: res.data
+      body: res
    }
 }
 

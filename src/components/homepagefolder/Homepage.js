@@ -46,11 +46,12 @@ const Homepage = () => {
   console.log(items);
 
   const handleAddItemToServer = (item) => {
-    fetch("/cart", {
+    fetch("/.netlify/functions/postToCart", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(item),
     }).then(() => dispatch(addToCart(item)));
+    console.log('handleAddItemToServer', body);
   };
   const [barPosition, setBarPosition] = useState(0)
   return (

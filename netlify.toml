@@ -7,13 +7,3 @@
     from = "https://keen-dijkstra-382f3a.netlify.app/api/*"
     to = "./netlify/functions/:splat"
     status = 200
-
-[[redirects]]
-    from = "https://keen-dijkstra-382f3a.netlify.app/items"
-    to = "https://fierce-anchorage-33605.herokuapp.com/items"
-    status = 200
-
-[[redirects]]
-    from = "*/"
-    to = "/index.html"
-    status = 200

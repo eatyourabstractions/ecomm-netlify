@@ -51,7 +51,7 @@ const Homepage = () => {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(item),
     }).then(() => dispatch(addToCart(item)));
-    console.log('handleAddItemToServer', body);
+    
   };
   const [barPosition, setBarPosition] = useState(0)
   return (

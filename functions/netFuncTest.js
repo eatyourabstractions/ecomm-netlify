@@ -10,3 +10,6 @@ exports.handler = async (event, context) => {
       body: res.data
    }
 }
+
+
+// && cp _redirects build/_redirects
